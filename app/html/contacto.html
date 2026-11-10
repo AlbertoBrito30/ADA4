@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navegador">
+            <ul>
+                <li ><a href="index.html">Menu</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Formulario de registro</h1>
+
+    <form action="guardar.php" method="POST" id="registro">
+        <fieldset>
+            <legend>Contacto</legend>
+            
+            <h2>Nombre y apellido</h2>
+            <label for="nombres">Nombres</label>
+            <input type="text" name="nombres" id="nombre">
+
+            <label for="apellidos">Apelidos</label>
+            <input type="text" name="apellidos" id="apellido">
+
+            <h2>datos de contacto</h2>
+            <label for="tel">numero</label>
+            <input type="tel" name="tel" id="tel" placeholder="1234567890">
+
+            <label for="email">correo</label>
+            <input type="email" name="email" id="email" placeholder="example@correo.com">
+
+            <h2>cuantos animales tienes</h2>
+            <label for="numero">Ingrese un numero</label>
+            <select name="numeroAnimales" id="numero">
+                
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2+">2+</option>
+            </select>
+
+            <h2>terminar formulario</h2>
+            <button type="submit" id="enviar">Enviar</button>
+
+        </fieldset>
+    </form>
+    <script src="../js/validaciones.js"></script>
+    
+</body>
+</html>
